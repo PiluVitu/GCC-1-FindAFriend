@@ -1,4 +1,4 @@
-# GCC-1-FindAFriend
+# GCC#1 FindAFriend
 
 
 ## Sobre
