@@ -30,7 +30,6 @@
   white-space: nowrap;
   border-width: 0;
 }
-
 body {
   font-size: 1.6rem;
   display: grid;
@@ -44,9 +43,8 @@ body {
 }
 
 #app {
-  padding: 0 auto;
   height: 100vh;
-  max-width: 36rem;
+  max-width: 50rem;
 }
 
 header {
@@ -84,7 +82,7 @@ header {
   display: block;
 
   border-top: solid 1px var(--white);
-  width: 31.1rem;
+  width: 90%;
 
   position: relative;
   top: -2.9rem;
@@ -92,19 +90,22 @@ header {
 .brandAndMenu nav {
   background: var(--red--300);
 
-  width: 36rem;
+  width: 99.9%;
 
   padding: 2.7rem 0 2.7rem 2rem;
 
   position: absolute;
 
   top: 8rem;
-  left: 23.65%;
+  right: 0;
 
-  z-index: 2;
+  z-index: 1000;
+
+  overflow-y: hidden;
 
   border-radius: 0 0 3rem 3rem;
 }
+
 .brandAndMenu nav ul {
   display: flex;
   flex-direction: column;
@@ -170,6 +171,8 @@ header {
   justify-content: space-between;
   gap: 2rem;
 
+  width: 100%;
+
   position: absolute;
   top: 42rem;
 
@@ -180,11 +183,18 @@ header {
   width: 27.9rem;
   height: 25.5rem;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 2rem;
+
   background: var(--red--gradient);
 }
 .dogAndButton div:nth-child(1),
 .dogAndButton div:nth-child(3) {
-  width: 2rem;
+  width: clamp(2rem, 3rem, 8rem);
   border-radius: 0 2rem 2rem 0;
   background: var(--red--300);
 }
@@ -194,17 +204,35 @@ header {
 
 .dogAndButton div:nth-child(4) {
   position: absolute;
-  z-index: 7;
-  bottom: 2.2rem;
-  left: 6rem;
+  z-index: 700;
+  bottom: 2000rem;
+  right: 67px;
 
-  width: fit-content;
-  height: fit-content;
+  
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+
   background: none;
+
+
 }
-.dogAndButton div:nth-child(4) > button {
-  width: 23.9rem;
-  height: 5.5rem;
+
+.dogAndButton div img {
+  position: relative;
+
+  bottom: -1.38rem;
+  right: 0;
+}
+.dogAndButton div button {
+
+  position: relative;
+
+  bottom: 25%;
+
+  padding: 18.33px 77.22px;
 
   background: var(--white);
   border: none;
@@ -219,9 +247,3 @@ header {
   cursor: pointer;
 }
 
-.dogAndButton div img {
-  position: relative;
-
-  bottom: 2.2rem;
-  left: 2rem;
-}
