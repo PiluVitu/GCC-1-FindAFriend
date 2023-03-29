@@ -111,3 +111,35 @@ header {
 .brandAndMenu nav ul li a:hover {
   font-weight: 700;
 }
+
+#home {
+  color: var(--white);
+}
+.localFriends {
+  margin: 5.2rem 0 3.5rem 2.1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.localFriends .friends img{
+  transform: translateX(-4px);
+  transition: all 0.5s;
+}
+.localFriends .friends img:hover{
+  margin-right: 1.3rem;
+}
+.localFriends .friends img:nth-child(2) {
+  transform: translateX(-21px);
+}
+.localFriends .friends img:nth-child(3) {
+  transform: translateX(-38px);
+}
+.localFriends .friends img:nth-child(4) {
+  transform: translateX(-55px);
+}
+.localFriends span{
+  font-size: 1.4rem;
+  line-height: 120%;
+}
