@@ -99,7 +99,9 @@ header {
   position: absolute;
 
   top: 8rem;
-  left: 16.2rem;
+  left: 23.65%;
+
+  z-index: 2;
 
   border-radius: 0 0 3rem 3rem;
 }
@@ -213,6 +215,8 @@ header {
   font-size: 1.4rem;
   line-height: 1.5rem;
   text-align: center;
+
+  cursor: pointer;
 }
 
 .dogAndButton div img {
