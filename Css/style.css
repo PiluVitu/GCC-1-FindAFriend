@@ -102,3 +102,12 @@ header {
   flex-direction: column;
   gap: 1.2rem;
 }
+.brandAndMenu nav ul li a {
+  color: var(--white);
+  font-size: 1.8rem;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+}
+.brandAndMenu nav ul li a:hover {
+  font-weight: 700;
+}
