@@ -18,6 +18,18 @@
   list-style: none;
 }
 
+.sr-only, .hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 body {
   font-size: 1.6rem;
   height: 100vh;
@@ -33,4 +45,25 @@ header {
   background: var(--red--100);
   width: 100%;
   margin-block: auto;
+}
+
+.brandAndMenu {
+  padding: 2rem;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brandAndMenu button {
+  background: var(--white);
+  border: none;
+
+  width: 4rem;
+  height: 4rem;
+
+  border-radius: 0.9rem;
+
+  cursor: pointer;
 }
