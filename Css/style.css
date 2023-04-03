@@ -33,13 +33,10 @@
 body {
   font-size: 1.6rem;
   display: grid;
-  place-items: center;
 
   font-family: 'Nunito', sans-serif;
 
   overflow-x: hidden;
-
-  background: var(--blue--800);
 }
 
 #app {
@@ -208,7 +205,6 @@ header {
   bottom: 2000rem;
   right: 67px;
 
-  
   display: flex;
 
   flex-direction: column;
@@ -216,8 +212,6 @@ header {
   justify-content: end;
 
   background: none;
-
-
 }
 
 .dogAndButton div img {
@@ -227,7 +221,6 @@ header {
   right: 0;
 }
 .dogAndButton div button {
-
   position: relative;
 
   bottom: 25%;
@@ -247,3 +240,100 @@ header {
   cursor: pointer;
 }
 
+@media (max-width: 352px) {
+  .dogAndButton div {
+    margin-top: 4rem;
+  }
+  .dogAndButton div button {
+    padding: 18.33px 72px;
+  }
+}
+
+@media (min-width: 426px) {
+  #app {
+    height: 100vh;
+    max-width: 100%;
+  }
+
+  header {
+    background: var(--red--100);
+    width: 100%;
+    height: 82rem;
+    margin-block: auto;
+  }
+
+  .brandAndMenu {
+    padding: 2rem;
+
+    height: 7.2rem;
+    max-width: 74.6rem;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--red--100);
+  }
+  .dogAndButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    width: 100%;
+
+    position: absolute;
+    top: 42rem;
+
+    z-index: 0;
+  }
+
+  .dogAndButton div:nth-child(1),
+  .dogAndButton div:nth-child(3) {
+    width: clamp(10rem, 5em, 12rem);
+    border-radius: 0 2rem 2rem 0;
+    background: var(--red--300);
+  }
+  .dogAndButton div:nth-child(3) {
+    border-radius: 2rem 0 0 2rem;
+  }
+  .dogAndButton div button {
+    padding: 18.33px 72px;
+  }
+}
+
+@media (min-width: 590px) {
+  #app {
+    height: 100vh;
+    max-width: 100%;
+  }
+
+  header {
+    background: var(--red--100);
+    width: 100%;
+    height: 82rem;
+    margin-block: auto;
+  }
+
+  .brandAndMenu {
+    padding: 2rem;
+
+    height: 7.2rem;
+    max-width: 74.6rem;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--red--100);
+  }
+
+  .dogAndButton div {
+    margin-top: 4rem;
+  }
+  .dogAndButton div button {
+    padding: 18.33px 72px;
+  }
+}
