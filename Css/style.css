@@ -314,6 +314,8 @@ header {
     width: 100%;
     height: 82rem;
     margin-block: auto;
+
+    padding-top: 8rem;
   }
 
   .brandAndMenu {
@@ -328,6 +330,10 @@ header {
     align-items: center;
 
     background: var(--red--100);
+  }
+
+  #home h1 {
+    width: 28rem;
   }
 
   .dogAndButton div {
