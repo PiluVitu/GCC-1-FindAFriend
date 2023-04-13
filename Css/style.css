@@ -198,20 +198,9 @@ header {
 .dogAndButton div:nth-child(3) {
   border-radius: 2rem 0 0 2rem;
 }
-
-.dogAndButton div:nth-child(4) {
-  position: absolute;
-  z-index: 700;
-  bottom: 2000rem;
-  right: 67px;
-
-  display: flex;
-
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-
-  background: none;
+.dogAndButton div:nth-child(4),
+.dogAndButton div:nth-child(5) {
+  display: none;
 }
 
 .dogAndButton div img {
@@ -322,18 +311,41 @@ header {
     padding: 2rem;
 
     height: 7.2rem;
-    max-width: 74.6rem;
+    width: 39rem;
+
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    z-index: 1;
 
     display: flex;
 
     justify-content: space-between;
     align-items: center;
 
-    background: var(--red--100);
+    background: none;
   }
 
   #home h1 {
     width: 28rem;
+  }
+
+  #home .localFriends {
+    margin-top: calc(5.2rem + 7.2rem);
+  }
+
+  .dogAndButton {
+    display: grid;
+
+    gap: 1.6rem;
+
+    width: 100%;
+
+    position: absolute;
+    top: 5rem;
+    right: -1rem;
+
+    z-index: 1;
   }
 
   .dogAndButton div {
