@@ -42,4 +42,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## Muito Obrigado por tirar um pouco do seu tempo e prestigiar o meu projeto
 
 ---
-<footer align="center">Feito com ❤️ por <a href="https://piluvitu.dev">PiluVitu</a></footer>
+<p align="center">Feito com ❤️ por <a href="https://piluvitu.dev">PiluVitu</a></p>
