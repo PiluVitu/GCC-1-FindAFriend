@@ -7,6 +7,7 @@
   --white: #ffff;
   --gray--200: #d9d9d9;
   --blue--800: #0d3b66;
+  overflow-x: hidden;
 }
 
 * {
@@ -35,8 +36,6 @@ body {
   display: grid;
 
   font-family: 'Nunito', sans-serif;
-
-  overflow-x: hidden;
 }
 
 #app {
@@ -190,7 +189,9 @@ header {
   background: var(--red--gradient);
 }
 .dogAndButton div:nth-child(1),
-.dogAndButton div:nth-child(3) {
+.dogAndButton div:nth-child(3),
+.dogAndButton div:nth-child(4),
+.dogAndButton div:nth-child(5) {
   width: clamp(2rem, 3rem, 8rem);
   border-radius: 0 2rem 2rem 0;
   background: var(--red--300);
@@ -311,7 +312,7 @@ header {
     padding: 2rem;
 
     height: 7.2rem;
-    width: 39rem;
+    width: clamp(39rem, 65.5%, 48rem);
 
     position: absolute;
     top: 8rem;
@@ -336,6 +337,13 @@ header {
 
   .dogAndButton {
     display: grid;
+    justify-content: center;
+    justify-items: center;
+
+    grid-template-areas:
+      'A D'
+      'B D'
+      'C E';
 
     gap: 1.6rem;
 
@@ -343,15 +351,72 @@ header {
 
     position: absolute;
     top: 5rem;
-    right: -1rem;
+    right: -32rem;
 
-    z-index: 1;
+    z-index: 0;
   }
 
   .dogAndButton div {
     margin-top: 4rem;
   }
+
+  .dogAndButton div:nth-child(1),
+  .dogAndButton div:nth-child(3),
+  .dogAndButton div:nth-child(4),
+  .dogAndButton div:nth-child(5) {
+    border-radius: 2rem;
+    margin: 0;
+    background: var(--red--300);
+  }
+
+  .dogAndButton div:nth-child(1),
+  .dogAndButton div:nth-child(3),
+  .dogAndButton div:nth-child(5) {
+    width: 28.2rem;
+    height: 9.2rem;
+  }
+
+  .dogAndButton div:nth-child(1) {
+    grid-area: B;
+  }
+  .dogAndButton div:nth-child(2) {
+    height: 100%;
+    margin: 0;
+    grid-area: A;
+  }
+  .dogAndButton div:nth-child(3) {
+    grid-area: C;
+  }
+  .dogAndButton div:nth-child(4) {
+    display: initial;
+    height: 100%;
+    width: 100%;
+    grid-area: D;
+  }
+  .dogAndButton div:nth-child(5) {
+    display: initial;
+    grid-area: E;
+  }
+
   .dogAndButton div button {
     padding: 18.33px 72px;
+
+    bottom: -26.4%;
+  }
+
+  .dogAndButton div img {
+    bottom: -5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .brandAndMenu {
+    width: clamp(39rem, 67.5%, 41.5rem);
+  }
+
+  .dogAndButton div:nth-child(1),
+  .dogAndButton div:nth-child(2),
+  .dogAndButton div:nth-child(3) {
+    width: 33rem;
   }
 }
